@@ -168,6 +168,7 @@ def player_stats(player_name)
   find_player(player_name)
 end
 
+<<<<<<< HEAD
 # def shoe_stats(group)
 #   shoe_hash = {}
 #     group.each do |name, stat|
@@ -179,5 +180,16 @@ def big_shoe_rebounds
   players["Mason Plumlee"].fetch(:rebounds)
 end
 
+=======
+def shoe_stats(group)
+  shoe_hash = {}
+    group.each do |name, stat|
+      shoe_hash.merge!(name: "#{stat[:shoe]}")
+    end
+  shoe_hash
+end
+
+players["Mason Plumlee"].fetch(:rebounds)
+>>>>>>> d01161f008073b72ebb7dbf66f42e08bba8f764c
   
 
